@@ -1,17 +1,7 @@
-import numpy as np
-
-a = int(input())
-b = int(input())
-c = int(input())
-
-d = [0, 1, 2, 3, 4, 5]
-t = np.array(d)
-
-x = a + b * t
-y = c + b * t - ((10 * t**2)/2)
-
-print(x, y)
-
-
-
-
+g = 9.8
+def my_func(m, h, V):
+    Ep = m * g * h
+    Ek = (m * V**2)/2
+    A = Ep + Ek
+    return Ep + Ek
+print(A)
