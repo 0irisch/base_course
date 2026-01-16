@@ -1,25 +1,17 @@
-figure = input('Name:')
 
-d = {'треугольник': "t_calc", 'круг': "c_calc", 'прямоугольник': "r_calc"}
-if figure == 'треугольник':
-    h = int(input('Введите высоту:'))
-    a = int(input('Введите основание:'))
-    def t_calc():
-        s = h * a / 2
-        return s
-    print('Площадь равна:', t_calc())
+def area(figure, *args):
+    if figure == 'треугольник':
+        s = args[0] * args[1] / 2
+        print('Площадь равна:', s)
+    elif figure == 'круг':
+        s = 2 * 3.14 * args[0]
+        print('Площадь равна:', s)
+    elif figure == 'прямоугольник':
+         s = args[0] * args[1]
+         print('Площадь равна:', s)
+    else:
+        s = None
+        print(s) 
+    return s
 
-elif figure == 'круг':
-    R = int(input('Введите радиус:'))
-    def c_calc():
-        s = 2 * 3.14 * R
-        return s
-    print('Площадь равна:', c_calc())
-
-elif figure == 'прямоугольник':
-    h = int(input('Введите высоту:'))
-    a = int(input('Введите основание:'))
-    def r_calc():
-        s = h * a 
-        return s
-    print('Площадь равна:', r_calc())
+trioales_square = area('треугольник', 8, 8 , 0, 7, 7)
