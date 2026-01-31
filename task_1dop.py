@@ -7,7 +7,7 @@ def lissage_plotter(a, A, q, b, B):
     x = A * np.cos(a * t + q)
     y = B * np.sin(b * t)
     plt.plot(x, y)
-    plt.savefig('task__4_1.png')
+    plt.savefig('task__1dop_lissage.png')
 
 
 a = 1

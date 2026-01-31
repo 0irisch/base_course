@@ -10,7 +10,7 @@ def giperbola_plotter(a=5, b=5, c=0.1):
 
     plt.axis('equal')
     plt.title('task2')
-    plt.savefig('Task__2.png')
+    plt.savefig('Task__2_giperbola.png')
 
 
 giperbola_plotter(a=5, b=5, c=0.1)
