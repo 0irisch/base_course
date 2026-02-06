@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def lesenka_plotter(N=5):
-    x = np.arange(N, N+1, 0.1)
-    y = x
+    x = np.arange(0, N+1, 0.01)
+    y = x // 1
     plt.plot(x, y)
     plt.axis('equal')
     plt.savefig('task_3dop.png')
