@@ -13,27 +13,33 @@ def circle(R, x0, y0, starst, stop, step):
     return x, y
 
 
-plt.plot([250, 100], [320, 290], lw=2, color='w')
-plt.savefig('slide_2_paint_image.png')
 
-plt.plot([250, 280], [320, 520], lw=2, color='w')
-plt.savefig('slide_2_paint_image.png')
-
-#coords = circle(35, 180, 210, np.pi/2+np.pi/4, 3*np.pi/2, 0.1)
-#plt.plot(coords[0], coords[1], lw=2, color='w')
+#plt.plot([250, 100], [320, 290], lw=2, color='w')
 #plt.savefig('slide_2_paint_image.png')
 
-plt.plot([300, 310], [280, 100], lw=2, color='w')
+#plt.plot([250, 280], [320, 520], lw=2, color='w')
+#plt.savefig('slide_2_paint_image.png')
+
+coords = circle(120, 205, 190, 29*np.pi/36, 11*np.pi/6, 0.1)
+plt.plot(coords[0], coords[1], lw=2, color='w')
 plt.savefig('slide_2_paint_image.png')
 
-plt.plot([300, 500], [280, 250], lw=2, color='w')
+coords = circle(150, 200, 160, np.pi/3, 29*np.pi/36, 0.1)
+plt.plot(coords[0], coords[1], lw=2, color='w')
 plt.savefig('slide_2_paint_image.png')
 
-plt.plot([500, 470], [250, 370], lw=2, color='w')
-plt.savefig('slide_2_paint_image.png')
 
-plt.plot([280, 470], [520, 460], lw=2, color='w')
-plt.savefig('slide_2_paint_image.png')
+#plt.plot([300, 310], [280, 100], lw=2, color='w')
+#plt.savefig('slide_2_paint_image.png')
+
+#plt.plot([300, 500], [280, 250], lw=2, color='w')
+#plt.savefig('slide_2_paint_image.png')
+
+#plt.plot([500, 470], [250, 370], lw=2, color='w')
+#plt.savefig('slide_2_paint_image.png')
+
+#plt.plot([280, 470], [520, 460], lw=2, color='w')
+#plt.savefig('slide_2_paint_image.png')
 
 
 
