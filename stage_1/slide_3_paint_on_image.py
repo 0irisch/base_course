@@ -12,7 +12,23 @@ def circle(R, x0, y0, starst, stop, step):
     y = y0 + R * np.sin(t)
     return x, y
 
-#левое крыло
+coords = circle(150, 420, 370, 43*np.pi/36, 25*np.pi/18, 0.1) #нижняя верхняя часть
+plt.plot(coords[0], coords[1], lw=1, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+coords = circle(80, 350, 314, 7*np.pi/6, 55*np.pi/36, 0.1) #нижняя нижняя часть
+plt.plot(coords[0], coords[1], lw=1, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+coords = circle(150, 167, 185, 11*np.pi/36, 19*np.pi/36, 0.1) #верхняя нижняя часть
+plt.plot(coords[0], coords[1], lw=1, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+coords = circle(80, 210, 260, 11*np.pi/36, 23*np.pi/36, 0.1) #верхняя верхняя часть
+plt.plot(coords[0], coords[1], lw=1, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+# #левое крыло
 coords = circle(300, 15, 130, 0, np.pi/6, 0.1)
 plt.plot(coords[0], coords[1], lw=2, color='w')
 plt.savefig('slide_2_paint_image.png')

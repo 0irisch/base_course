@@ -14,15 +14,6 @@ def circle(R, x0, y0, starst, stop, step):
     return x, y
 
 
-x = np.array([230, 240]) # Очень важно, чтобы точки не повторялись 
-y = np.array([420, 290]) # иначе будет ошибка интерполяции
-
-coords = circle(35, 180, 210, np.pi/2+np.pi/4, 3*np.pi/2, 0.1)
-x = np.append(x, coords[0])
-y = np.append(y, coords[1])
-
-x = np.append(x, [180, 280])
-y = np.append(y,  [175, 220])
 
 coords = circle(150, 300, 370, np.pi+np.pi/2.15, 2*np.pi-np.pi/6, 0.1)
 x = np.append(x, coords[0])
