@@ -18,11 +18,11 @@ ax.plot(xd, yd, '-', linewidth=2, color='k')
 
 t = np.linspace(0, 2*np.pi, 20)
 xwi1 = 2 + 1 * np.cos(t)
-ywi1 = 4 + 1 * np.sin(t)
+ywi1 = 4 + 1 * np.sin(t) / 2
 ax.plot(xwi1, ywi1, '-', linewidth=2, color='k')
 
 t = np.linspace(0, 2*np.pi, 20)
-xwi1 = 8 + 1 * np.cos(t)
+xwi1 = 8 + 1 * np.cos(t) / 2
 ywi1 = 4 + 1 * np.sin(t)
 ax.plot(xwi1, ywi1, '-', linewidth=2, color='k')
 
