@@ -13,9 +13,9 @@ yr = [8, 11, 8, 8]
 ax.plot(xr, yr, '-', linewidth=2, color='k')
 
 xd = [4, 4, 6, 6, 4]
+
 yd = [0, 5, 5, 0, 0]
 ax.plot(xd, yd, '-', linewidth=2, color='k')
-
 t = np.linspace(0, 2*np.pi, 20)
 xwi1 = 2 + 1 * np.cos(t)
 ywi1 = 4 + 1 * np.sin(t) / 2
