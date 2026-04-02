@@ -14,8 +14,7 @@ def circle(R, x0, y0, starst, stop, step):
 
 #правое крыло
 
-
-coords = circle(160, 550, 385, 13*np.pi/18, 8*np.pi/9, 0.1)
+coords = circle(60, 330,80, 17*np.pi/18, 5*np.pi/4, 0.1)
 plt.plot(coords[0], coords[1], lw=0.5, color='w')
 plt.savefig('slide_2_paint_image.png')
 
@@ -25,7 +24,22 @@ plt.savefig('slide_2_paint_image.png')
 
 
 
+coords = circle(60, 390, 440, np.pi/2, 8*np.pi/9, 0.1)
+plt.plot(coords[0], coords[1], lw=0.5, color='w')
+plt.savefig('slide_2_paint_image.png')
 
+plt.plot([395, 385], [460, 500], lw=0.5, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+plt.plot([390, 395], [428, 460], lw=0.5, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+plt.plot([423, 390], [468, 428], lw=0.5, color='w')
+plt.savefig('slide_2_paint_image.png')
+
+coords = circle(80, 490, 425, np.pi/2, 5*np.pi/6, 0.1)
+plt.plot(coords[0], coords[1], lw=0.5, color='w')
+plt.savefig('slide_2_paint_image.png')
 
 plt.plot([480, 490], [490, 505], lw=0.5, color='w')
 plt.savefig('slide_2_paint_image.png')
@@ -244,6 +258,7 @@ plt.savefig('slide_2_paint_image.png')
 # coords = circle(150, 210, 165, 5*np.pi/12, 3*np.pi/4, 0.1)
 # plt.plot(coords[0], coords[1], lw=2, color='w')
 # plt.savefig('slide_2_paint_image.png')
+
 
 
 
