@@ -316,13 +316,17 @@ scale = 0.1 * len_unit ** 3 # характерная толщина туманн
 rho_s_in_pc = m * n * scale # плотность водорода в кг/пк^2
 
 def density_dist(x, y, x0=300, y0=300, intensity=100, dec_rate=[0.5, 0.5]):
-    scalar_func = intensity * np.exp(- dec_rate[0] * (x - x0)**2 - dec_rate[1] * (y - y0)**2) 
+    scalar_func = intensity / np.exp(- dec_rate[0] * (x - x0)**2 - dec_rate[1] * (y - y0)**2)
     return scalar_func
 
+
+
 fig, ax = plt.subplots()
-sc_plot = ax.scatter(x_p, y_p, c=density_dist(x_p, y_p, 300, 300, rho_s_in_pc, [0.00001, 0.000001]))
+sc_plot = ax.scatter(x_p, y_p, c=density_dist(x_p, y_p, 300, 300, rho_s_in_pc, [0.00000001, 0.00000001]))
 ax.set_ylabel('Координата Х, м')
 ax.set_xlabel('Координата Y, м')
+
+
 
 cbar = fig.colorbar(sc_plot)
 cbar.set_label("Поле плотности, кг/пк^2")
